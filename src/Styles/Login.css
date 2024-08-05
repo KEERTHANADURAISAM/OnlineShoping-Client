@@ -1,0 +1,48 @@
+/* .sign-In-Form{
+    display: flex;
+} */
+ .sign-In-Form{
+    margin:5rem;
+ }
+.sign-In-Form-Fields{
+display: flex;
+flex-direction: column;
+gap:0.5rem;
+}
+.sign-label-email{
+    display: flex;
+    color:#2c2d2d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:200;
+    letter-spacing: 0.1rem;
+}
+.sign-input{
+    height: 1.5rem;
+    width: 30rem;
+    color: #6B7071;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 0.5rem;
+    background-color: #F7F7F9;
+    border: none;
+    padding:0.5rem;
+}
+.SIGN-bTN{
+    display: flex;
+    height: 2.2rem;
+    width: 5.5rem;   
+    background-color: #070707;
+    color: #F7F7F9;
+    border: none;
+    padding: 0.8rem;
+}
+.sign-In-reg{
+      color: #070707!important;
+
+}
+.sign-In-reg:hover{
+border-bottom:1px solid black;
+cursor: pointer;
+}
+.SIGN-bTN:hover{
+    cursor: pointer;
+}
