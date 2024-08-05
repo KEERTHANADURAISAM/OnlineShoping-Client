@@ -1,11 +1,9 @@
-
- .sign-In-Form{
+/* .sign-In-Form{
+    display: flex;
+} */
+.sign-In-Form{
     margin:5rem;
  }
- .sign-In-header{
-letter-spacing: 0.5rem;
- }
- /* form fields */
 .sign-In-Form-Fields{
 display: flex;
 flex-direction: column;
