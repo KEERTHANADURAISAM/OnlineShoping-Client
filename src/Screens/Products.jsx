@@ -16,7 +16,6 @@ const [Products,setProduct] =useState(data)
         <h3>{item.productName}</h3>
         <span>{item.productRating}</span>
         <label>{item.productPrice}</label>
-      
       </div>
      ))}
       </div>
