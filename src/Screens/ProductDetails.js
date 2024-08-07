@@ -1,6 +1,6 @@
 import React from 'react'
 import'../Styles/ProductDetails.css'
-import productImg from '../imgs/wallter.jpg'
+import productImg from '../imgs/Ditch.jpg'
 import { FaArrowLeft } from 'react-icons/fa6'
 const ProductDetails = () => {
   return (
@@ -9,7 +9,7 @@ const ProductDetails = () => {
       <div className='img-flex'>
         <div className='go-back-div'>
             <label> <FaArrowLeft/></label>
-        <label>Go Back</label>
+        <label className='rating-p-tag'>Go Back</label>
         </div>
       </div>
       <div className='product-img-div'>
@@ -17,13 +17,13 @@ const ProductDetails = () => {
       </div>
       </div>
       <div className='detail-div'>
-        <h1 className='h1-pro-head'>Logitech G-Series Gaming Mouse</h1>
+        <h3 className='h1-pro-head'>Logitech G-Series Gaming Mouse</h3>
         <hr className='hr-line'></hr>
-        <p>⭐⭐⭐⭐12 Reviews</p>
+        <p className='rating-p-tag'>⭐⭐⭐⭐12 Reviews</p>
         <hr className='hr-line'></hr>
-        <p>Price : $49.99</p>
+        <p className='rating-p-tag'>Price : $49.99</p>
         <hr className='hr-line'></hr>
-        <p>Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience</p>
+        <p className='pro-details-p-tag'>Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience</p>
         <hr className='hr-line'></hr>
       </div>
       <div className='cart-status-div'>
