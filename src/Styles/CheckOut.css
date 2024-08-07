@@ -1,0 +1,6 @@
+.chekout-headers-div{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

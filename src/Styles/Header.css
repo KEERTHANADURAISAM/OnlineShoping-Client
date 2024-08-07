@@ -1,0 +1,27 @@
+.nav-main-div{
+    display: flex;
+    background-color: #343A40;
+    color: azure;
+}
+.nav-head-p{
+    margin-left: 10rem;
+    font-size: 1.5rem;
+    font-family: EuclidLight;
+}
+.nav-sub-div{
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+    margin-left: 40rem;
+    gap: 0.8rem;
+    font-family: Euclid;
+}
+.label-cart-nav{
+    font-family: Nunito Sans,sans-serif;
+font-size: 0.8rem;
+color: #9c9c9e;
+}
+.label-cart-nav:hover{
+    color: aliceblue;
+    cursor: pointer;
+}
