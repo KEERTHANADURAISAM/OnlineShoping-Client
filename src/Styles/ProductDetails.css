@@ -40,20 +40,20 @@ font-size: 2rem;
     color: RGB(85, 89, 92);
 }
 .detail-div{
-    margin-left: 2rem;
+    /* margin: 2rem; */
 }
 .cart-status-div{
 border: 1px solid #e4dbdb;
-height: 14rem;
+height: 16rem;
 display: grid;
 grid-template-rows: repeat(15rem,5%);
-margin-top: 5rem;
+/* margin-top: 5rem; */
 }
 .status-p-tag{
     display: flex;
     justify-content: space-between;
     padding: .3rem;
-    gap: 8rem;
+   margin:1rem;
 }
 .cart-count-div{
       
@@ -65,7 +65,7 @@ margin-top: 5rem;
 }
 .cart-qty-slect-tag{
     display: flex;
-    width: 4rem;
+    width: 6rem;
 }
 .cart-add-btn-div{
     border-top: 1px solid #e4dbdb;

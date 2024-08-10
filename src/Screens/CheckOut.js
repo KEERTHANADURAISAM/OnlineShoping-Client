@@ -1,8 +1,9 @@
 import React from 'react'
 import'../Styles/CheckOut.css'
+import { Formik } from 'formik'
 const CheckOut = () => {
   return (
-    <div className='sign-In-Form'>
+    <div className='sign-In-Form' onSubmit={Formik.handleSubmit} >
         <div className='chekout-headers-div'>
     <label >SignIn</label>
     <label>Shipping</label>
