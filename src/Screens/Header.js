@@ -1,9 +1,5 @@
 import React from "react";
-import { FiShoppingCart } from "react-icons/fi";
-import { TbCircleLetterB } from "react-icons/tb";
-import { TbCircleLetterO } from "react-icons/tb";
 import "../Styles/Header.css";
-import { IconContext } from "react-icons";
 import { FaCircleUser } from "react-icons/fa6";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -16,11 +12,11 @@ const Header = () => {
       <div className="nav-sub-div">
         <FaShoppingCart />
         <Link to="/cart" className="label-cart-nav">
-         CART
+          CART
         </Link>
         <FaCircleUser />
         <Link to="/login" className="label-cart-nav">
-        SIGNIN
+          SIGNIN
         </Link>
       </div>
     </div>
