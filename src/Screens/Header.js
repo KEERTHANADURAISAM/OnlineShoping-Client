@@ -1,28 +1,30 @@
-import React from 'react'
+import React from "react";
 import { FiShoppingCart } from "react-icons/fi";
 import { TbCircleLetterB } from "react-icons/tb";
 import { TbCircleLetterO } from "react-icons/tb";
-import'../Styles/Header.css'
-import { IconContext } from 'react-icons';
-import { FaCircleUser } from 'react-icons/fa6';
-import { FaShoppingCart } from 'react-icons/fa';
+import "../Styles/Header.css";
+import { IconContext } from "react-icons";
+import { FaCircleUser } from "react-icons/fa6";
+import { FaShoppingCart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
-    <div className='nav-main-div'>
-         {/* <IconContext.Provider
-      value={{  size: '17px' ,marginTop:"5px"}}
-    > */}
-        <p className='nav-head-p'>BINGO SHOP</p>
-        {/* </IconContext.Provider> */}
-        <div className='nav-sub-div'>
+    <div className="nav-main-div">
+      <Link to="/" className="nav-head-p">
+        BINGO SHOP
+      </Link>
+      <div className="nav-sub-div">
         <FaShoppingCart />
-<label className='label-cart-nav'>CART</label>
-<FaCircleUser />
-<label className='label-cart-nav'>SIGNIN</label>
-        </div>
-      
+        <Link to="/cart" className="label-cart-nav">
+         CART
+        </Link>
+        <FaCircleUser />
+        <Link to="/login" className="label-cart-nav">
+        SIGNIN
+        </Link>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

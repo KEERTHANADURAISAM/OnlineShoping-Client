@@ -2,12 +2,16 @@
     display: flex;
     background-color: #343A40;
     color: azure;
+    padding: 1rem;
 }
 .nav-head-p{
+    display: flex;
     margin-left: 10rem;
     font-size: 1.5rem;
     font-family: EuclidLight;
     cursor: pointer;
+    text-decoration: none;
+    color: azure;
 }
 .nav-sub-div{
     display: flex;
@@ -21,6 +25,7 @@
     font-family: Nunito Sans,sans-serif;
 font-size: 0.8rem;
 color: #9c9c9e;
+text-decoration: none;
 }
 .label-cart-nav:hover{
     color: aliceblue;
