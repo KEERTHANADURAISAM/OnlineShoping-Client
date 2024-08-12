@@ -19,7 +19,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className='product-container'>
       {products && Array.isArray(products) && products.length > 0 ? (
         products.map((item) => <Products key={item._id} products={item} />)
       ) : (

@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Styles/ProductDetails.css";
-import productImg from "../imgs/Ditch.jpg";
 import { FaArrowLeft } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import axios from "axios";
+
+
+
 const ProductDetails = () => {
+  const [product, setProduct] = useState([]);
+  const params = useParams();
+  console.log(params);
+  useEffect(() => {
+    viewProduct();
+  }, []);
+
+  const viewProduct = async () => {
+    try {
+      const getProduct = await axios.get(
+        `http://localhost:3008/api/products/${params.id}`
+       
+      );
+     
+      setProduct(getProduct.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div className="detail-pro-grid">
       <div>
@@ -17,30 +40,28 @@ const ProductDetails = () => {
           </div>
         </div>
         <div className="product-img-div">
-          <img src={productImg} alt="" className="img-pro" />
+          <img src={product.image} alt={product.name} className="img-pro" />
         </div>
       </div>
       <div className="detail-div">
-        <h3 className="h1-pro-head">Logitech G-Series Gaming Mouse</h3>
+        <h3 className="h1-pro-head">{product.name}</h3>
         <hr className="hr-line"></hr>
-        <p className="rating-p-tag">⭐⭐⭐⭐12 Reviews</p>
+        <p className="rating-p-tag">⭐⭐⭐⭐{product.numReviews} Reviews</p>
         <hr className="hr-line"></hr>
-        <p className="rating-p-tag">Price : $49.99</p>
+        <p className="rating-p-tag">Price :${product.price}</p>
         <hr className="hr-line"></hr>
         <p className="pro-details-p-tag">
-          Get a better handle on your games with this Logitech LIGHTSYNC gaming
-          mouse. The six programmable buttons allow customization for a smooth
-          playing experience
+         {product.description}
         </p>
         <hr className="hr-line"></hr>
       </div>
       <div className="cart-status-div">
         <div className="status-p-tag">
-          <p>Status:</p>
-          <p>In Stock</p>
+          <p>Status:{product.status}</p>
+          <p>In Stock {product.countInStock}</p>
         </div>
         <div className="cart-count-div">
-          <label for="itemsCount">Qty</label>
+          <label for="itemsCount">Qty{product.qty}</label>
           <select
             name="itemsCount"
             id="itemsCount"
@@ -60,7 +81,8 @@ const ProductDetails = () => {
           </select>
         </div>
         <div className="cart-add-btn-div">
-          <button className="cart-add-btn">ADD TO CART</button>
+          <Link to='/payment'
+           className="cart-add-btn">ADD TO CART</Link>
         </div>
       </div>
     </div>

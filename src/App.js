@@ -9,6 +9,7 @@ import Products from "./Screens/Products";
 import Register from "./Screens/Register";
 import Home from "./Screens/Home";
 import Cart from "./Screens/Cart";
+import PaymentRazorpay from "./Screens/PaymentRazorpay";
 import ShippingCart from "./Screens/ShippingCart";
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
 <Route path="/profile" element={<CheckOut/>}/>
 <Route path="/payment" element={<Payment/>}/>
 <Route path="/cart" element={<Cart/>}/>
+<Route path="/payment/razorpay" element={<PaymentRazorpay/>}/>
+
 </Routes>
 </div>
   );

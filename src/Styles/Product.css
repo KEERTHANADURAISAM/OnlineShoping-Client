@@ -1,9 +1,8 @@
 .product-container{
     display: grid;
-    grid-template-columns: repeat(4,25%);
-    margin-top: 4rem;
+    grid-template-columns: repeat(4,24%);
     gap:1.5rem;
-    margin-left: 4rem;
+    margin: 4rem;
     
 }
 .product-img{
@@ -15,7 +14,6 @@
     flex-direction:column;
     justify-content:flex-start;
     align-items: flex-start;
-
     gap:1rem;
     border: 1px solid rgb(183, 181, 181);
     padding:.3rem;
@@ -28,6 +26,13 @@
     letter-spacing: 2px;
     /* font-family: Euclid; */
 }
-.product-style-font{
-
+.product-name-head:hover{
+color: rgb(90, 89, 89);
+text-decoration: underline;
+}
+.product-name-head-label{
+    text-decoration: none;  
+    color: rgb(30, 30, 30);
+    letter-spacing: 2px;
+    font-family: Euclid;
 }
