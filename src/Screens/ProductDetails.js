@@ -57,7 +57,8 @@ const ProductDetails = () => {
       </div>
       <div className="cart-status-div">
         <div className="status-p-tag">
-          <p>Status:{product.status}</p>
+          <p>Status:{product.countInStock>0 ? "In Stock" :"Out Of Stock"}</p>
+
           <p>In Stock {product.countInStock}</p>
         </div>
         <div className="cart-count-div">

@@ -1,38 +1,21 @@
 .product-container{
     display: grid;
-    grid-template-columns: repeat(4,24%);
+    grid-template-columns: repeat(4,25%);
     gap:1.5rem;
     margin: 4rem;
-    
-}
-.product-img{
-    height:12rem;
-    width: 12rem
+    border: 1px soid rgb(68, 67, 67);
 }
 .product-flex-div{
     display: flex;
-    flex-direction:column;
-    justify-content:flex-start;
-    align-items: flex-start;
-    gap:1rem;
-    border: 1px solid rgb(183, 181, 181);
-    padding:.3rem;
-    border-radius: .2rem;
+    height: 16rem;
+    width: 18rem;
+ 
 }
-.product-name-head{
-    text-decoration: none;
-    font-family:"Segoe UI Symbol";   
-    color: rgb(30, 30, 30);
-    letter-spacing: 2px;
-    /* font-family: Euclid; */
+.product-img{
+    height: 10rem;
+    width: 10rem;
 }
-.product-name-head:hover{
-color: rgb(90, 89, 89);
-text-decoration: underline;
-}
-.product-name-head-label{
-    text-decoration: none;  
-    color: rgb(30, 30, 30);
-    letter-spacing: 2px;
-    font-family: Euclid;
+.product-style-font{
+    display: flex;
+    /* flex-direction:; */
 }
